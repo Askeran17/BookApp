@@ -1,0 +1,9 @@
+<h1>Book List</h1>
+<button (click)="router.navigate(['/add'])">Add New Book</button>
+<ul>
+  <li *ngFor="let book of books; let i = index">
+    {{ book.title }} by {{ book.author }} ({{ book.publishDate }})
+    <button (click)="editBook(i)">Edit</button>
+    <button (click)="deleteBook(i)">Delete</button>
+  </li>
+</ul>
