@@ -1,3 +1,11 @@
+# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+
+# Compiled output
+/dist
+/tmp
+/out-tsc
+/bazel-out
+
 # Node.js
 node_modules/
 dist/
@@ -5,6 +13,8 @@ build/
 
 # Logs
 *.log
+npm-debug.log
+yarn-error.log
 
 # Temporary files
 *.tmp
@@ -20,10 +30,25 @@ build/
 # IDE files
 .vscode/
 .idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
 *.suo
 *.user
 *.userossc
 *.sln.docstates
+
+# Miscellaneous
+/.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
 
 # System files
 .DS_Store
